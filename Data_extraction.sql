@@ -1,436 +1,574 @@
-CREATE TABLE mytable(
-   Menu_Group      VARCHAR(25) NOT NULL
-  ,Item            VARCHAR(51)
-  ,Quantity_Sold   INTEGER  NOT NULL
-  ,Refunds         VARCHAR(5) NOT NULL
-  ,Net_Sales       VARCHAR(11) NOT NULL
-  ,Avg_Price       VARCHAR(7) NOT NULL
-  ,Discount        VARCHAR(9) NOT NULL
-  ,_Net_Sales      VARCHAR(7) NOT NULL
-  ,_Category_Sales VARCHAR(7)
-);
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('(Beer)',NULL,729,'$0.00','$4,745.65','$6.51','$82.35','1.74%','100.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Bottle Beer','Asahi',39,'$0.00','$271.00','$6.95','$0.00','0.10%','5.71%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Bottle Beer','Corona',59,'$0.00','$344.40','$5.84','$9.60','0.13%','7.26%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Bottle Beer','Michelob Ultra',76,'$0.00','$420.00','$5.53','$36.00','0.15%','8.85%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Bottle Beer','Moody Tongue IPA',70,'$0.00','$560.00','$8.00','$0.00','0.20%','11.80%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Bottle Beer','Sake Bomb',3,'$0.00','$30.00','$10.00','$0.00','0.01%','0.63%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Bottle Beer','Sapporo',321,'$0.00','$2,068.45','$6.44','$23.55','0.76%','43.59%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Bottle Beer','Sapporo (non-alcoholic)',24,'$0.00','$168.00','$7.00','$0.00','0.06%','3.54%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Bottle Beer','Sapporo Light',97,'$0.00','$657.00','$6.77','$0.00','0.24%','13.84%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Seltzers','196 Grapefruit',12,'$0.00','$70.20','$5.85','$1.80','0.03%','1.48%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Seltzers','196 Lemon',7,'$0.00','$34.20','$4.89','$7.80','0.01%','0.72%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Seltzers','196 Peach',21,'$0.00','$122.40','$5.83','$3.60','0.04%','2.58%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('(Disregard)',NULL,10,'$0.00','$0.00','$0.00','$0.00','0.00%','100.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('N/A','ALLERGY',10,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('(Food)',NULL,6271,'$0.00','$79,931.32','$12.75','$4,582.28','29.24%','100.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Desserts','Arigato',42,'$0.00','$377.10','$8.98','$0.90','0.14%','0.47%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Desserts','Japanese Donuts',443,'$0.00','$1,652.04','$3.73','$2,010.96','0.60%','2.07%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Desserts','Mango Sorbet',10,'$0.00','$35.00','$3.50','$15.00','0.01%','0.04%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Desserts','Mochi',10,'$0.00','$63.00','$6.30','$7.00','0.02%','0.08%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Desserts','Sorbet',26,'$0.00','$125.00','$4.81','$5.00','0.05%','0.16%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Desserts','Vanilla bean ice cream',37,'$0.00','$180.00','$4.86','$5.00','0.07%','0.23%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Desserts','z:checkmate- Japanese Donuts',42,'$0.00','$347.20','$8.27','$0.00','0.13%','0.43%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Entree','Chirashi Poke Bowl* (GF)',109,'$0.00','$2,229.39','$20.45','$59.61','0.82%','2.79%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Entree','Japchae Stir Fry Noodles (GF)',158,'$0.00','$3,241.35','$20.51','$76.65','1.19%','4.06%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Entree','Orange Chicken',197,'$0.00','$5,157.15','$26.18','$219.85','1.89%','6.45%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Entree','Teriyaki Chicken (GF)',238,'$0.00','$7,056.30','$29.65','$61.70','2.58%','8.83%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Entree','z:checkmate- Bulgogi BBQ Beef (GF)',14,'$0.00','$474.00','$33.86','$0.00','0.17%','0.59%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Entree','z:checkmate- Chirashi Poke Bowl* (GF)',6,'$0.00','$138.00','$23.00','$0.00','0.05%','0.17%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Entree','z:checkmate- Japchae Stir Fry Noodles (GF)',11,'$0.00','$231.00','$21.00','$0.00','0.08%','0.29%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Entree','z:checkmate- Teriyaki Chicken (GF)',14,'$0.00','$388.00','$27.71','$0.00','0.14%','0.49%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Extras','Avocado Slices',1,'$0.00','$4.00','$4.00','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Extras','Fries',16,'$0.00','$62.80','$3.92','$1.20','0.02%','0.08%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Extras','Ginger',29,'$0.00','$7.25','$0.25','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Extras','Senso Cheers',4,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Extras','Side Chicken',3,'$0.00','$12.00','$4.00','$0.00','0.00%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Extras','Side Kimchi (GF)',2,'$0.00','$8.00','$4.00','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Extras','Side Salad',8,'$0.00','$29.00','$3.63','$3.00','0.01%','0.04%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Extras','Wasabi',4,'$0.00','$1.00','$0.25','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Extras','White Rice',17,'$0.00','$66.40','$3.91','$1.60','0.02%','0.08%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Extras','z:checkmate- Ginger',23,'$0.00','$5.75','$0.25','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Extras','z:checkmate- Side Kimchi (GF)',1,'$0.00','$4.00','$4.00','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Extras','z:checkmate- Side Salad',5,'$0.00','$20.00','$4.00','$0.00','0.01%','0.03%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Extras','z:checkmate- Wasabi',22,'$0.00','$5.50','$0.25','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Extras','z:checkmate- White Rice',3,'$0.00','$12.00','$4.00','$0.00','0.00%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Kids','Kids Avocado Bento (V, GF)',37,'$0.00','$462.40','$12.50','$70.00','0.17%','0.58%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Kids','Kids Cali Bento (GF)',52,'$0.00','$597.50','$11.49','$185.50','0.22%','0.75%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Kids','Kids Chicken Bento (GF)',94,'$0.00','$1,041.10','$11.08','$364.90','0.38%','1.30%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Kids','Kids Corndushi Bento',67,'$0.00','$739.40','$11.04','$208.60','0.27%','0.93%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Kids','Kids Tempura Bento (V)',1,'$0.00','$14.00','$14.00','$0.00','0.01%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Kids','z:checkmate- Kids Avocado Bento',3,'$0.00','$42.00','$14.00','$0.00','0.02%','0.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Kids','z:checkmate- Kids Cali Bento',2,'$0.00','$28.00','$14.00','$0.00','0.01%','0.04%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Kids','z:checkmate- Kids Chicken Bento',6,'$0.00','$84.00','$14.00','$0.00','0.03%','0.11%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Kids','z:checkmate- Kids Corndushi Bento',9,'$0.00','$126.00','$14.00','$0.00','0.05%','0.16%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Kids','z:checkmate- Kids Tempura Bento',1,'$0.00','$14.00','$14.00','$0.00','0.01%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('N/A','Open Food',5,'$0.00','$6.00','$1.20','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('N/A','Open Sushi',2,'$0.00','$4.00','$2.00','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Rice | Vegetables','Fried Rice (GF)',425,'$0.00','$5,930.95','$13.96','$119.05','2.17%','7.42%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Rice | Vegetables','Kimchi Bacon Fried Rice (GF)',109,'$0.00','$1,909.80','$17.52','$52.20','0.70%','2.39%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Rice | Vegetables','Stir Fry Veggies (VG, GF)',5,'$0.00','$42.30','$8.46','$2.70','0.02%','0.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Rice | Vegetables','z:checkmate- Fried Rice (GF)',66,'$0.00','$963.00','$14.59','$0.00','0.35%','1.20%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Rice | Vegetables','z:checkmate- Kimchi Bacon Fried Rice (GF)',9,'$0.00','$216.00','$24.00','$0.00','0.08%','0.27%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Rice | Vegetables','z:checkmate- Stir Fry Veggies (GF)',7,'$0.00','$63.00','$9.00','$0.00','0.02%','0.08%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sauces','Sauce',20,'$0.00','$15.00','$0.75','$0.00','0.01%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sauces','Sauces',52,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sauces','z:checkmate- Gluten Free Soy Sauce',25,'$0.00','$18.75','$0.75','$0.00','0.01%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sauces','z:checkmate- Honey Aioli (GF)',1,'$0.00','$0.75','$0.75','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sauces','z:checkmate- OMG (GF)',5,'$0.00','$3.75','$0.75','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sauces','z:checkmate- Sauce',6,'$0.00','$4.50','$0.75','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sauces','z:checkmate- Spicy Korean',2,'$0.00','$1.50','$0.75','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sauces','z:checkmate- Spicy Mayo (GF)',9,'$0.00','$6.75','$0.75','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sauces','z:checkmate- Unagi Sauce',3,'$0.00','$2.25','$0.75','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations','GH - Karaage Chicken 6 pc',4,'$0.00','$40.00','$10.00','$0.00','0.01%','0.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations','GH - Korean BBQ Lettuce Wraps',11,'$0.00','$110.00','$10.00','$0.00','0.04%','0.14%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations','KPOP Fries (GF)',153,'$0.00','$2,574.80','$16.83','$103.20','0.94%','3.22%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations','Korean BBQ Lettuce Wraps (GF)',251,'$0.00','$4,005.50','$15.96','$79.50','1.47%','5.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations','z:checkmate- Korean BBQ Lettuce Wraps (GF)',9,'$0.00','$162.00','$18.00','$0.00','0.06%','0.20%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Hot Foo','Bulgogi BBQ Beef (GF)',175,'$0.00','$5,943.20','$33.96','$268.80','2.17%','7.44%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Hot Foo','Karaage Chicken (GF)',10,'$0.00','$156.00','$15.60','$0.00','0.06%','0.20%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Hot Foo','Spicy Korean Chicken Bites',103,'$0.00','$1,700.00','$16.50','$51.00','0.62%','2.13%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Hot Foo','z:checkmate- Crispy Rice Steak* (GF)',49,'$0.00','$1,204.50','$24.58','$0.00','0.44%','1.51%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Hot Foo','z:checkmate- Spicy Korean Chicken Bites',7,'$0.00','$119.00','$17.00','$0.00','0.04%','0.15%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Small Bites','GH - Miso Garlic Edamame',15,'$0.00','$84.50','$5.63','$1.50','0.03%','0.11%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Small Bites','z:checkmate- Bang Bang Shrimp',17,'$0.00','$289.00','$17.00','$0.00','0.11%','0.36%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Small Bites','z:checkmate- Mango Wakame Salad (GF)',3,'$0.00','$30.00','$10.00','$0.00','0.01%','0.04%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Small Bites','z:checkmate- Sunomono Cucumber Salad (V,GF)',12,'$0.00','$60.00','$5.00','$0.00','0.02%','0.08%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','Bang Bang Shrimp (GF)',391,'$0.00','$6,570.50','$16.80','$76.50','2.40%','8.22%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','Crab Rangoon',556,'$0.00','$5,686.42','$10.23','$150.33','2.08%','7.11%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','Edamame (V, GF)',445,'$0.00','$2,991.10','$6.72','$123.90','1.09%','3.74%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','GH - Bang Bang Shrimp',23,'$0.00','$230.00','$10.00','$0.00','0.08%','0.29%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','Gyoza',268,'$0.00','$2,623.87','$9.79','$68.63','0.96%','3.28%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','Mango Wakame Salad (V, GF)',81,'$0.00','$803.50','$9.92','$6.50','0.29%','1.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','Miso Garlic Edamame(V, GF)',311,'$0.00','$2,730.30','$8.78','$65.70','1.00%','3.42%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','Miso Soup(GF)',283,'$0.00','$1,396.25','$4.93','$2.75','0.51%','1.75%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','Sunomono Cucumber Salad (V, GF)',228,'$0.00','$1,129.25','$4.95','$10.75','0.41%','1.41%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','z:checkmate- Crab Rangoon',46,'$0.00','$528.00','$11.48','$0.00','0.19%','0.66%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','z:checkmate- Edamame (GF)',37,'$0.00','$259.00','$7.00','$0.00','0.09%','0.32%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','z:checkmate- Gyoza',29,'$0.00','$302.50','$10.43','$0.00','0.11%','0.38%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','z:checkmate- KPOP Fries (GF)',6,'$0.00','$108.00','$18.00','$0.00','0.04%','0.14%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','z:checkmate- Miso Garlic Edamame(GF)',32,'$0.00','$288.00','$9.00','$0.00','0.11%','0.36%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Starters','z:checkmate- Miso Soup(GF)',20,'$0.00','$100.00','$5.00','$0.00','0.04%','0.13%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Weekend Lunch Special','5 PC Nigiri Set',8,'$0.00','$133.00','$16.63','$19.00','0.05%','0.17%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Weekend Lunch Special','Bang Bang Shrimp Bowl Set',44,'$0.00','$762.30','$17.32','$78.70','0.28%','0.95%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Weekend Lunch Special','Bulgogi BBQ Beef Bowl Set',42,'$0.00','$817.90','$19.47','$5.10','0.30%','1.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Weekend Lunch Special','Chirashi Poke Bowl Set*',17,'$0.00','$378.00','$22.24','$0.00','0.14%','0.47%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Weekend Lunch Special','Combo Set',10,'$0.00','$260.00','$26.00','$0.00','0.10%','0.33%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Weekend Lunch Special','Crispy Rice Set*',6,'$0.00','$128.00','$21.33','$0.00','0.05%','0.16%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Weekend Lunch Special','Maki Set',23,'$0.00','$439.00','$19.09','$0.00','0.16%','0.55%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Weekend Lunch Special','Teriyaki Chicken Bowl Set',28,'$0.00','$519.00','$18.54','$0.00','0.19%','0.65%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('(Liquor)',NULL,3205,'$0.00','$48,777.76','$15.22','$1,463.25','17.84%','100.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Digestif','Amaretto',2,'$0.00','$26.00','$13.00','$0.00','0.01%','0.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Digestif','Aperol',32,'$0.00','$511.00','$15.97','$0.00','0.19%','1.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Digestif','Baileys',1,'$0.00','$13.00','$13.00','$0.00','0.00%','0.03%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Digestif','Campari',1,'$0.00','$14.00','$14.00','$0.00','0.01%','0.03%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Gin','Hendricks',27,'$0.00','$479.00','$17.74','$0.00','0.18%','0.98%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Gin','Roku',27,'$0.00','$379.00','$14.04','$0.00','0.14%','0.78%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('N/A','Espresso Martini GH',17,'$0.00','$121.00','$7.12','$16.00','0.04%','0.25%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('N/A','Open Liquor',21,'$0.00','$246.01','$11.71','$0.00','0.09%','0.50%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Rum','Appleton Estate 12 Yr',2,'$0.00','$28.00','$14.00','$0.00','0.01%','0.06%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Rum','Bacardi Superior',6,'$0.00','$68.00','$11.33','$0.00','0.02%','0.14%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Rum','Captain Morgans',12,'$0.00','$132.00','$11.00','$0.00','0.05%','0.27%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Cucumber Mint',4,'$0.00','$68.00','$17.00','$0.00','0.02%','0.14%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Espresso Martini',191,'$0.00','$2,937.10','$15.38','$41.90','1.07%','6.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Forbidden Panda',115,'$0.00','$1,469.00','$12.77','$26.00','0.54%','3.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Frozen Cabo Wabo',74,'$0.00','$1,110.40','$15.01','$73.60','0.41%','2.28%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Hugo Spritz',22,'$0.00','$374.00','$17.00','$0.00','0.14%','0.77%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Japanese Mule',118,'$0.00','$1,884.00','$15.97','$4.00','0.69%','3.86%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Kick Of Passion',1,'$0.00','$17.00','$17.00','$0.00','0.01%','0.03%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Lychee Martini',458,'$0.00','$6,296.40','$13.75','$377.60','2.30%','12.91%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Manhattan',37,'$0.00','$511.00','$13.81','$7.00','0.19%','1.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Mo Money No Problems',70,'$0.00','$1,776.61','$25.38','$113.39','0.65%','3.64%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Negroni',18,'$0.00','$252.00','$14.00','$0.00','0.09%','0.52%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Paper Crane',22,'$0.00','$374.00','$17.00','$0.00','0.14%','0.77%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Passionfruit Mojito',26,'$0.00','$259.00','$9.96','$0.00','0.09%','0.53%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Real Housewives of Frankfort',206,'$0.00','$3,158.10','$15.33','$89.90','1.16%','6.47%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Rose All Day',144,'$0.00','$2,121.75','$14.73','$38.25','0.78%','4.35%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Senso Cosmo',133,'$0.00','$2,137.50','$16.07','$20.50','0.78%','4.38%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Senso Dirty',122,'$0.00','$2,155.50','$17.67','$40.50','0.79%','4.42%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Senso in Paris',135,'$0.00','$2,065.60','$15.30','$94.40','0.76%','4.23%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Shibuya Old Fashioned',206,'$0.00','$2,886.19','$14.01','$147.81','1.06%','5.92%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Smoked Maple Old Fashioned',70,'$0.00','$1,610.00','$23.00','$0.00','0.59%','3.30%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Spicy Mango-San',339,'$0.00','$4,233.60','$12.49','$85.40','1.55%','8.68%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','St Tropez',2,'$0.00','$30.00','$15.00','$0.00','0.01%','0.06%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Summer in Kyoto',1,'$0.00','$15.00','$15.00','$0.00','0.01%','0.03%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Survivors Milk',9,'$0.00','$140.25','$15.58','$12.75','0.05%','0.29%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','The Last Samu-Rita',53,'$0.00','$698.00','$13.17','$69.00','0.26%','1.43%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Tokyo Old Fashioned',58,'$0.00','$986.00','$17.00','$0.00','0.36%','2.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Cocktails','Ultimate Mai Tai',17,'$0.00','$255.00','$15.00','$34.00','0.09%','0.52%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Tequila & Mezcal','Casamigos Blanco',44,'$0.00','$642.20','$14.60','$36.80','0.23%','1.32%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Tequila & Mezcal','Casamigos Reposado',4,'$0.00','$70.00','$17.50','$0.00','0.03%','0.14%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Tequila & Mezcal','Clase Azul Reposado',8,'$0.00','$408.00','$51.00','$0.00','0.15%','0.84%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Tequila & Mezcal','Del Maguey Vida Mezcal',10,'$0.00','$150.00','$15.00','$0.00','0.05%','0.31%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Tequila & Mezcal','Don Fulano Anejo',2,'$0.00','$35.00','$17.50','$0.00','0.01%','0.07%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Tequila & Mezcal','Don Fulano Reposado',3,'$0.00','$68.00','$22.67','$0.00','0.02%','0.14%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Tequila & Mezcal','Don Julio Anejo',2,'$0.00','$42.00','$21.00','$0.00','0.02%','0.09%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Tequila & Mezcal','Don Julio Blanco',6,'$0.00','$92.00','$15.33','$0.00','0.03%','0.19%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Tequila & Mezcal','Ghost Tequila',3,'$0.00','$35.50','$11.83','$7.50','0.01%','0.07%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Tequila & Mezcal','Gran Centenario Cristalino Anejo',1,'$0.00','$22.00','$22.00','$0.00','0.01%','0.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Tequila & Mezcal','Gran Centenario Plata',6,'$0.00','$92.00','$15.33','$0.00','0.03%','0.19%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Tequila & Mezcal','Tequila Ocho Reposado',2,'$0.00','$32.00','$16.00','$0.00','0.01%','0.07%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vodka','Grey Goose',59,'$0.00','$998.00','$16.92','$73.00','0.37%','2.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vodka','Haku',1,'$0.00','$17.00','$17.00','$0.00','0.01%','0.03%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vodka','Titos',173,'$0.00','$2,551.35','$14.75','$47.65','0.93%','5.23%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Basil Hayden',2,'$0.00','$35.00','$17.50','$0.00','0.01%','0.07%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Bulleit Rye',4,'$0.00','$61.00','$15.25','$0.00','0.02%','0.13%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Elijah Craig',5,'$0.00','$84.00','$16.80','$0.00','0.03%','0.17%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Four Roses Single Barrel',3,'$0.00','$64.00','$21.33','$0.00','0.02%','0.13%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Glenlivet 12',3,'$0.00','$69.00','$23.00','$0.00','0.03%','0.14%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Hibiki 21',1,'$0.00','$45.00','$45.00','$0.00','0.02%','0.09%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Hibiki Harmony',12,'$0.00','$252.00','$21.00','$0.00','0.09%','0.52%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Jack Daniel''s',3,'$0.00','$39.00','$13.00','$0.00','0.01%','0.08%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Johnnie Walker Black',1,'$0.00','$22.00','$22.00','$0.00','0.01%','0.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Johnnie Walker Blue Label',1,'$0.00','$19.00','$19.00','$0.00','0.01%','0.04%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Knob Creek 7yr Rye',3,'$0.00','$57.00','$19.00','$0.00','0.02%','0.12%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Laphroaig Select',1,'$0.00','$22.00','$22.00','$0.00','0.01%','0.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Macallan 12 Double Cask',4,'$0.00','$104.00','$26.00','$0.00','0.04%','0.21%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Macallan Harmony Vibrant Oak',1,'$0.00','$38.00','$38.00','$0.00','0.01%','0.08%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Makers Mark',5,'$0.00','$84.00','$16.80','$0.00','0.03%','0.17%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Mitcher''s US 1 Small Batch',5,'$0.00','$105.00','$21.00','$0.00','0.04%','0.22%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Old Forester',1,'$0.00','$18.00','$18.00','$0.00','0.01%','0.04%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Old Grand-Dad 114',2,'$0.00','$33.70','$16.85','$6.30','0.01%','0.07%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Redbreast 12yr',2,'$0.00','$36.00','$18.00','$0.00','0.01%','0.07%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Remy Martin VSOP Cognac',1,'$0.00','$18.00','$18.00','$0.00','0.01%','0.04%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Suntori Toki',4,'$0.00','$84.00','$21.00','$0.00','0.03%','0.17%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Whistlepig 10yr Rye',6,'$0.00','$164.00','$27.33','$0.00','0.06%','0.34%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Whiskey/Scotch/Bourbon','Woodford Reserve',12,'$0.00','$231.00','$19.25','$0.00','0.08%','0.47%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('(N/A Beverages)',NULL,1540,'$0.00','$8,067.33','$5.24','$152.67','2.95%','100.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','Club Soda',27,'$0.00','$105.80','$3.92','$2.20','0.04%','1.31%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','Cranberry Juice',8,'$0.00','$32.00','$4.00','$0.00','0.01%','0.40%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','Ginger Beer',1,'$0.00','$4.00','$4.00','$0.00','0.00%','0.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','Iced Tea Lemon',76,'$0.00','$284.00','$3.74','$20.00','0.10%','3.52%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','Lemonade',151,'$0.00','$598.40','$3.96','$5.60','0.22%','7.42%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','N/A Mocktail',1,'$0.00','$11.00','$11.00','$0.00','0.00%','0.14%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','Not a Cucumber Mojito',54,'$0.00','$594.00','$11.00','$0.00','0.22%','7.36%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','Not a Pineapple Mule',71,'$0.00','$777.70','$10.95','$3.30','0.28%','9.64%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','Not a Strawberry Basil Smash',73,'$0.00','$745.80','$10.22','$57.20','0.27%','9.24%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','Not an Aperol Spritz',1,'$0.00','$12.00','$12.00','$0.00','0.00%','0.15%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','Ossulloc Organic Hot Tea',38,'$0.00','$152.00','$4.00','$0.00','0.06%','1.88%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','Soda',631,'$0.00','$1,878.00','$2.98','$15.00','0.69%','23.28%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','Sparkling Water',105,'$0.00','$520.50','$4.96','$4.50','0.19%','6.45%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','Still Water',156,'$0.00','$772.53','$4.95','$7.47','0.28%','9.58%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Beverages','Watermelon Refresher',147,'$0.00','$1,579.60','$10.75','$37.40','0.58%','19.58%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('(Sushi)',NULL,7403,'$0.00','$118,140.50','$15.96','$2,460.50','43.21%','100.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','California (GF)',405,'$0.00','$3,558.65','$8.79','$19.35','1.30%','3.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','Dragon',195,'$0.00','$3,436.40','$17.62','$75.60','1.26%','2.91%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','Eel Cucumber',35,'$0.00','$344.00','$9.83','$6.00','0.13%','0.29%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','Negi Hamachi* (GF)',32,'$0.00','$319.50','$9.98','$2.50','0.12%','0.27%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','Philly* (GF)',170,'$0.00','$1,674.00','$9.85','$27.00','0.61%','1.42%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','Rainbow* (GF)',159,'$0.00','$2,274.00','$14.30','$123.00','0.83%','1.92%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','Salmon Avocado* (GF)',131,'$0.00','$1,169.30','$8.93','$16.70','0.43%','0.99%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','Salmon Roll* (VG, GF)',4,'$0.00','$40.00','$10.00','$0.00','0.01%','0.03%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','Shrimp Tempura',283,'$0.00','$2,929.00','$10.35','$90.00','1.07%','2.48%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','Spicy Crab',151,'$0.00','$1,636.40','$10.84','$28.60','0.60%','1.39%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','Spicy Salmon Crunch* (GF)',172,'$0.00','$1,732.20','$10.07','$30.80','0.63%','1.47%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','Spicy Tuna* (GF)',294,'$0.00','$2,708.65','$9.21','$50.35','0.99%','2.29%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','Spicy Yellowtail* (GF)',44,'$0.00','$564.20','$12.82','$7.80','0.21%','0.48%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','Tuna Avocado (GF)',60,'$0.00','$619.00','$10.32','$44.00','0.23%','0.52%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','z:checkmate- California Roll (GF)',55,'$0.00','$564.25','$10.26','$0.00','0.21%','0.48%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','z:checkmate- Dragon Roll',9,'$0.00','$162.00','$18.00','$0.00','0.06%','0.14%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','z:checkmate- Negi Hamachi Roll (GF)',3,'$0.00','$30.75','$10.25','$0.00','0.01%','0.03%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','z:checkmate- Philly Roll (GF)',28,'$0.00','$281.50','$10.05','$0.00','0.10%','0.24%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','z:checkmate- Rainbow Roll (GF)',20,'$0.00','$300.00','$15.00','$0.00','0.11%','0.25%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','z:checkmate- Salmon Avocado Roll (GF)',22,'$0.00','$245.00','$11.14','$0.00','0.09%','0.21%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','z:checkmate- Salmon Roll (VG, GF)',2,'$0.00','$20.00','$10.00','$0.00','0.01%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','z:checkmate- Shrimp Tempura Roll',27,'$0.00','$354.00','$13.11','$0.00','0.13%','0.30%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','z:checkmate- Spicy Crab Roll',16,'$0.00','$179.00','$11.19','$0.00','0.07%','0.15%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','z:checkmate- Spicy Salmon Crunch Roll (GF)',31,'$0.00','$347.75','$11.22','$0.00','0.13%','0.29%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','z:checkmate- Spicy Tuna Roll (GF)',42,'$0.00','$465.00','$11.07','$0.00','0.17%','0.39%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','z:checkmate- Spicy Yellowtail Roll (GF)',15,'$0.00','$195.75','$13.05','$0.00','0.07%','0.17%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Classic Rolls','z:checkmate- Tuna Avocado Roll (GF)',3,'$0.00','$33.75','$11.25','$0.00','0.01%','0.03%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Ama Ebi* Nigiri',10,'$0.00','$63.00','$6.30','$7.00','0.02%','0.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Ama Ebi* Sashimi',10,'$0.00','$111.80','$11.18','$18.20','0.04%','0.09%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Bluefin Otoro* Nigiri',77,'$0.00','$912.00','$11.84','$12.00','0.33%','0.77%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Bluefin Otoro* Sashimi',39,'$0.00','$809.60','$20.76','$87.40','0.30%','0.69%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Ebi Nigiri',21,'$0.00','$84.00','$4.00','$0.00','0.03%','0.07%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Ebi Sashimi',5,'$0.00','$35.00','$7.00','$0.00','0.01%','0.03%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Escolar* Nigiri',39,'$0.00','$195.00','$5.00','$0.00','0.07%','0.17%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Escolar* Sashimi',14,'$0.00','$126.00','$9.00','$0.00','0.05%','0.11%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Hamachi Toro* Nigiri',39,'$0.00','$266.00','$6.82','$7.00','0.10%','0.23%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Hamachi Toro* Sashimi',14,'$0.00','$156.00','$11.14','$26.00','0.06%','0.13%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Hamachi* Nigiri',56,'$0.00','$278.50','$4.97','$1.50','0.10%','0.24%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Hamachi* Sashimi',16,'$0.00','$144.00','$9.00','$0.00','0.05%','0.12%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Hotate* Nigiri',25,'$0.00','$146.40','$5.86','$3.60','0.05%','0.12%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Hotate* Sashimi',11,'$0.00','$113.30','$10.30','$7.70','0.04%','0.10%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Maguro Sashimi',25,'$0.00','$225.00','$9.00','$0.00','0.08%','0.19%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Maguro* Nigiri',59,'$0.00','$293.50','$4.97','$1.50','0.11%','0.25%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Sake Toro* Nigiri',87,'$0.00','$604.80','$6.95','$4.20','0.22%','0.51%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Sake Toro* Sashimi',24,'$0.00','$312.00','$13.00','$0.00','0.11%','0.26%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Sake* Nigiri',129,'$0.00','$636.00','$4.93','$9.00','0.23%','0.54%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Sake* Sashimi',39,'$0.00','$333.00','$8.54','$18.00','0.12%','0.28%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Unagi Nigiri',42,'$0.00','$210.00','$5.00','$0.00','0.08%','0.18%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','Unagi Sashimi',11,'$0.00','$121.00','$11.00','$0.00','0.04%','0.10%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Ama Ebi Sashimi',2,'$0.00','$26.00','$13.00','$0.00','0.01%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Bluefin Chutoro Nigiri',1,'$0.00','$12.00','$12.00','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Bluefin Otoro Nigiri',3,'$0.00','$42.00','$14.00','$0.00','0.02%','0.04%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Bluefin Otoro Sashimi',4,'$0.00','$108.00','$27.00','$0.00','0.04%','0.09%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Ebi Nigiri',3,'$0.00','$12.00','$4.00','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Escolar Nigiri',5,'$0.00','$25.00','$5.00','$0.00','0.01%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Escolar Sashimi',2,'$0.00','$18.00','$9.00','$0.00','0.01%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Hamachi Nigiri',5,'$0.00','$25.00','$5.00','$0.00','0.01%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Hamachi Sashimi',4,'$0.00','$36.00','$9.00','$0.00','0.01%','0.03%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Hamachi Toro Nigiri',1,'$0.00','$7.00','$7.00','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Hamachi Toro Sashimi',1,'$0.00','$13.00','$13.00','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Hotate Nigiri*',3,'$0.00','$18.00','$6.00','$0.00','0.01%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Maguro Nigiri',10,'$0.00','$50.00','$5.00','$0.00','0.02%','0.04%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Sake Nigiri',25,'$0.00','$125.00','$5.00','$0.00','0.05%','0.11%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Sake Sashimi',7,'$0.00','$63.00','$9.00','$0.00','0.02%','0.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Sake Toro Nigiri',13,'$0.00','$91.00','$7.00','$0.00','0.03%','0.08%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Sake Toro Sashimi',2,'$0.00','$26.00','$13.00','$0.00','0.01%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Unagi Nigiri',3,'$0.00','$18.00','$6.00','$0.00','0.01%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Nigiri | Sashimi','z:checkmate- Unagi Sashimi',1,'$0.00','$10.00','$10.00','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Sushi','Angry Crab* (GF)',117,'$0.00','$2,039.70','$17.43','$78.30','0.75%','1.73%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Sushi','Crispy Rice Flight* (GF)',193,'$0.00','$6,147.20','$31.85','$28.80','2.25%','5.20%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Sushi','Crispy Rice Spicy Tuna* (GF)',193,'$0.00','$3,365.10','$17.44','$117.90','1.23%','2.85%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Sushi','Crispy Rice Steak* (GF)',241,'$0.00','$5,228.30','$21.69','$90.20','1.91%','4.43%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Sushi','GH - Crispy Rice Spicy Tuna 2 pc',16,'$0.00','$158.00','$9.88','$0.00','0.06%','0.13%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Sushi','Rollipop* (GF)',51,'$0.00','$1,116.50','$21.89','$5.50','0.41%','0.95%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Sushi','Salmon Avocado Sashimi* (GF)',1,'$0.00','$18.00','$18.00','$0.00','0.01%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Sushi','Temaki HandRoll Experience (GF)',34,'$0.00','$1,040.00','$30.59','$12.00','0.38%','0.88%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Sushi','z:checkmate- Angry Crab',9,'$0.00','$168.00','$18.67','$0.00','0.06%','0.14%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Sushi','z:checkmate- Crispy Rice Flight',15,'$0.00','$480.00','$32.00','$0.00','0.18%','0.41%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Sushi','z:checkmate- Crispy Rice Spicy Tuna (GF)',34,'$0.00','$684.00','$20.12','$0.00','0.25%','0.58%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Sushi','z:checkmate- Rollipop (GF)',1,'$0.00','$21.00','$21.00','$0.00','0.01%','0.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Sushi','z:checkmate- Salmon Guru (GF)',3,'$0.00','$54.00','$18.00','$0.00','0.02%','0.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Senso Creations - Sushi','z:checkmate- Yellowtail Serrano (GF)',10,'$0.00','$170.00','$17.00','$0.00','0.06%','0.14%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','Aloha* (GF)',197,'$0.00','$3,895.00','$19.77','$46.00','1.42%','3.30%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','Chicago Fire*',249,'$0.00','$5,104.90','$20.50','$128.10','1.87%','4.32%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','Chili Shrimp',203,'$0.00','$4,060.30','$20.00','$203.70','1.49%','3.44%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','Hot Honey Hamachi',34,'$0.00','$627.00','$18.44','$53.00','0.23%','0.53%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','Lobster Filet Mignon (GF)',87,'$0.00','$3,393.00','$39.00','$0.00','1.24%','2.87%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','Machu Picchu* (GF)',6,'$0.00','$114.00','$19.00','$0.00','0.04%','0.10%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','Mr. Miyagi*',100,'$0.00','$2,030.70','$20.31','$69.30','0.74%','1.72%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','Mt. Fuji*',342,'$0.00','$7,069.60','$20.67','$113.40','2.59%','5.98%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','Orange County* (GF)',16,'$0.00','$318.00','$19.88','$2.00','0.12%','0.27%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','RAVU Roll*',375,'$0.00','$9,257.00','$24.69','$35.00','3.39%','7.84%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','Slammin'' Salmon* (GF)',244,'$0.00','$4,730.00','$19.39','$153.00','1.73%','4.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','Spicy Toro*',5,'$0.00','$120.00','$24.00','$0.00','0.04%','0.10%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','Spicy Wifey*',326,'$0.00','$6,665.35','$20.45','$181.65','2.44%','5.64%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','Surf & Turf * (GF)',186,'$0.00','$4,343.60','$23.35','$122.40','1.59%','3.68%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','White Street',154,'$0.00','$2,812.95','$18.27','$113.05','1.03%','2.38%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','z:checkmate- Aloha Roll* (GF)',30,'$0.00','$571.50','$19.05','$0.00','0.21%','0.48%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','z:checkmate- Chicago Fire Roll*',13,'$0.00','$274.50','$21.12','$0.00','0.10%','0.23%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','z:checkmate- Chilli Shrimp Roll',23,'$0.00','$529.00','$23.00','$0.00','0.19%','0.45%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','z:checkmate- Lobster Filet Mignon Roll (GF)',3,'$0.00','$117.00','$39.00','$0.00','0.04%','0.10%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','z:checkmate- Mr. Miyagi',4,'$0.00','$88.00','$22.00','$0.00','0.03%','0.07%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','z:checkmate- Mt Fuji Roll*',29,'$0.00','$609.00','$21.00','$0.00','0.22%','0.52%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','z:checkmate- RAVU Roll*',18,'$0.00','$434.25','$24.13','$0.00','0.16%','0.37%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','z:checkmate- Slammin'' Salmon(GF)',24,'$0.00','$576.00','$24.00','$0.00','0.21%','0.49%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','z:checkmate- Spicy Wifey*',41,'$0.00','$863.25','$21.05','$0.00','0.32%','0.73%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','z:checkmate- Surf & Turf Roll (GF)',8,'$0.00','$200.75','$25.09','$0.00','0.07%','0.17%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Signature Rolls','z:checkmate- White Street Roll',32,'$0.00','$640.00','$20.00','$0.00','0.23%','0.54%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sushi - Senso Creations','Salmon Guru* (GF)',8,'$0.00','$112.50','$14.06','$31.50','0.04%','0.10%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sushi - Senso Creations','Yellowtail Serrano* (GF)',93,'$0.00','$1,464.30','$15.75','$50.70','0.54%','1.24%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','ABC Roll (VG, GF)',44,'$0.00','$510.60','$11.60','$17.40','0.19%','0.43%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','Avocado Cucumber (VG, GF)',24,'$0.00','$187.20','$7.80','$4.80','0.07%','0.16%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','Avocado Roll (VG, GF)',28,'$0.00','$223.00','$7.96','$2.00','0.08%','0.19%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','Cucumber Roll (VG, GF)',9,'$0.00','$70.00','$7.78','$2.00','0.03%','0.06%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','Hoshi Crunch (VG)',41,'$0.00','$488.20','$11.91','$4.80','0.18%','0.41%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','Sweet Potato Avocado (VG)',72,'$0.00','$711.00','$9.88','$10.00','0.26%','0.60%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','Tempura Sweet Potato (VG)',60,'$0.00','$440.40','$7.34','$46.60','0.16%','0.37%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','Volcano Crab (VG)',19,'$0.00','$329.40','$17.34','$12.60','0.12%','0.28%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','z:checkmate- ABC Roll (VG GF)',3,'$0.00','$37.50','$12.50','$0.00','0.01%','0.03%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','z:checkmate- Asparagus Roll (VG GF)',1,'$0.00','$8.00','$8.00','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','z:checkmate- Avocado Cucumber roll (VG GF)',14,'$0.00','$112.00','$8.00','$0.00','0.04%','0.09%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','z:checkmate- Avocado Roll (VG GF)',7,'$0.00','$56.75','$8.11','$0.00','0.02%','0.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','z:checkmate- Cucumber Roll (VG GF)',1,'$0.00','$8.00','$8.00','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','z:checkmate- Hoshi Crunch (VG)',1,'$0.00','$12.00','$12.00','$0.00','0.00%','0.01%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','z:checkmate- Sweet Potato Avocado Roll (VG)',10,'$0.00','$102.25','$10.22','$0.00','0.04%','0.09%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Vegetarian | Vegan Rolls','z:checkmate- Tempura Sweet Potato Roll (VG)',6,'$0.00','$48.00','$8.00','$0.00','0.02%','0.04%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('(Wine)',NULL,1680,'$0.00','$13,726.80','$8.17','$180.20','5.02%','100.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Bonanza Bottle',3,'$0.00','$156.00','$52.00','$0.00','0.06%','1.14%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Bonanza Glass',43,'$0.00','$546.00','$12.70','$0.00','0.20%','3.98%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Bonanza, Cabernet Sauvignon',46,'$0.00','$0.00','$0.00','$13.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Daou Glass',22,'$0.00','$188.20','$8.55','$0.00','0.07%','1.37%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Daou, Cabernet Sauvignon',22,'$0.00','$0.00','$0.00','$1.80','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Decoy Bottle',1,'$0.00','$52.00','$52.00','$0.00','0.02%','0.38%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Decoy Glass',8,'$0.00','$100.75','$12.59','$3.25','0.04%','0.73%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Decoy, Merlot',9,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Elouan Glass',32,'$0.00','$377.00','$11.78','$0.00','0.14%','2.75%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Elouan, Pinot Noir',32,'$0.00','$0.00','$0.00','$39.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Flowers Bottle',1,'$0.00','$84.00','$84.00','$0.00','0.03%','0.61%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Flowers Glass',2,'$0.00','$42.00','$21.00','$0.00','0.02%','0.31%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Flowers, Pinot Noir',3,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Golden Hour Wine',36,'$0.00','$252.00','$7.00','$0.00','0.09%','1.84%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Prisoner Bottle',1,'$0.00','$84.00','$84.00','$0.00','0.03%','0.61%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Prisoner Glass',13,'$0.00','$252.00','$19.38','$0.00','0.09%','1.84%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Prisoner, Red Blend',14,'$0.00','$0.00','$0.00','$21.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Quilt Bottle',1,'$0.00','$72.00','$72.00','$0.00','0.03%','0.52%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Quilt Glass',14,'$0.00','$234.00','$16.71','$0.00','0.09%','1.70%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Quilt, Cabernet Sauvignon',15,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Saldo California, Zinfandel',10,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Saldo Glass',10,'$0.00','$98.00','$9.80','$0.00','0.04%','0.71%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Stags Leap Artemis Bottle',1,'$0.00','$140.00','$140.00','$0.00','0.05%','1.02%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Stags Leap Artemis, Cabernet Sauvignon',1,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Unshackled Glass',23,'$0.00','$318.50','$13.85','$3.50','0.12%','2.32%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Red Wine','Unshackled, Red Blend',23,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sake','Born Junmai Daiginjo Gold, 720 ml',1,'$0.00','$75.00','$75.00','$0.00','0.03%','0.55%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sake','Gekkeikan "Horin, " 300 ml',13,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sake','Gekkeikan "Horin," Bottle',10,'$0.00','$270.00','$27.00','$0.00','0.10%','1.97%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sake','Gekkeikan "Horin," Glass',3,'$0.00','$39.00','$13.00','$0.00','0.01%','0.28%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sake','Gekkeikan "Suzaku, " 300 ml',20,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sake','Gekkeikan "Suzaku," Bottle',14,'$0.00','$378.00','$27.00','$0.00','0.14%','2.75%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sake','Gekkeikan "Suzaku," Glass',6,'$0.00','$72.00','$12.00','$0.00','0.03%','0.52%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sake','House Sake (Hot)',52,'$0.00','$507.00','$9.75','$13.00','0.19%','3.69%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sake','Kurosawa Junmai Kimoto, 720ml',1,'$0.00','$48.00','$48.00','$0.00','0.02%','0.35%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sake','Sho Chiku Bai Bottle',9,'$0.00','$189.00','$21.00','$0.00','0.07%','1.38%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sake','Sho Chiku Bai Glass',7,'$0.00','$77.00','$11.00','$0.00','0.03%','0.56%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sake','Sho Chiku Bai Nigori, 300 ml',16,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sparkling Wine','Biagio, Moscato',23,'$0.00','$269.00','$11.70','$0.00','0.10%','1.96%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sparkling Wine','Maschio, Prosecco',24,'$0.00','$279.00','$11.63','$9.00','0.10%','2.03%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sparkling Wine','Moet & Chandon Brut 187ml',15,'$0.00','$294.00','$19.60','$21.00','0.11%','2.14%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sparkling Wine','Ruffino, Prosecco',47,'$0.00','$546.00','$11.62','$18.00','0.20%','3.98%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Sparkling Wine','Ruffino, Prosecco Rose',15,'$0.00','$180.00','$12.00','$0.00','0.07%','1.31%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Hampton Water Bottle',2,'$0.00','$120.00','$60.00','$0.00','0.04%','0.87%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Hampton Water Glass',64,'$0.00','$960.00','$15.00','$0.00','0.35%','6.99%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Hampton water, Rose',66,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Maison de Sancerre les Caillottes , Sauvignon Blanc',33,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Maison de Sancerre les Caillottes Glass',33,'$0.00','$561.00','$17.00','$0.00','0.21%','4.09%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Seaglass Bottle',4,'$0.00','$160.00','$40.00','$0.00','0.06%','1.17%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Seaglass Glass',34,'$0.00','$347.20','$10.21','$4.80','0.13%','2.53%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Seaglass, Reisling',38,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Seghesio Bottle',2,'$0.00','$120.00','$60.00','$0.00','0.04%','0.87%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Seghesio Glass',69,'$0.00','$1,026.75','$14.88','$3.75','0.38%','7.48%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Seghesio, Chardonnay',71,'$0.00','$0.00','$0.00','$4.50','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Stoneleigh Bottle',12,'$0.00','$576.00','$48.00','$0.00','0.21%','4.20%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Stoneleigh Glass',220,'$0.00','$2,615.40','$11.89','$9.00','0.96%','19.05%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Stoneleigh, Sauvignon Blanc',232,'$0.00','$0.00','$0.00','$15.60','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Vireton Bottle',4,'$0.00','$176.00','$44.00','$0.00','0.06%','1.28%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Vireton Glass',65,'$0.00','$845.00','$13.00','$0.00','0.31%','6.16%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('White Wine','Vireton, Pinot Gris',69,'$0.00','$0.00','$0.00','$0.00','0.00%','0.00%');
-INSERT INTO mytable(Menu_Group,Item,Quantity_Sold,Refunds,Net_Sales,Avg_Price,Discount,_Net_Sales,_Category_Sales) VALUES ('Grand Total',NULL,20838,'$0.00','$273,389.36','13.12','$8,921.25','100.00%',NULL);
+SELECT COUNT(*) AS total_rows
+FROM restaurant_project_mysql;
 
-DROP TABLE IF EXISTS mytable;
+SELECT mesiac, COUNT(*) AS total_rows
+FROM restaurant_project_mysql
+GROUP BY mesiac;
 
-USE restaurant_project;
+DESCRIBE restaurant_project_mysql;
 
-INSERT INTO predaje_restauracia (menu_group, item, quantity_sold, refunds, net_sales, avg_price, discount, mesiac)
-SELECT 
-    Menu_Group, 
-    Item, 
-    Quantity_Sold, 
-    CAST(REPLACE(Refunds, '$', '') AS DECIMAL(10,2)),
-    CAST(REPLACE(Net_Sales, '$', '') AS DECIMAL(10,2)),
-    CAST(REPLACE(Avg_Price, '$', '') AS DECIMAL(10,2)),
-    CAST(REPLACE(Discount, '$', '') AS DECIMAL(10,2)),
-    'júl'
-FROM mytable;
+SELECT
+    menu_group,
+    COUNT(*) AS row_count
+FROM restaurant_project_mysql
+GROUP BY menu_group
+ORDER BY row_count DESC;
 
-DROP TABLE mytable;
-
-SELECT COUNT(*) FROM predaje_restauracia;
+SELECT *
+FROM restaurant_project_mysql
+WHERE item IS NULL
+   OR menu_group LIKE '(%)'
+   OR item = 'Grand Total';
+   
+   
+   SELECT
+    mesiac,
+    SUM(
+        CASE
+            WHEN item IS NOT NULL
+             AND menu_group NOT LIKE '(%)'
+             AND menu_group <> 'Grand Total'
+            THEN quantity_sold
+            ELSE 0
+        END
+    ) AS product_quantity,
+    SUM(
+        CASE
+            WHEN item IS NOT NULL
+             AND menu_group NOT LIKE '(%)'
+             AND menu_group <> 'Grand Total'
+            THEN net_sales
+            ELSE 0
+        END
+    ) AS product_net_sales,
+    MAX(
+        CASE
+            WHEN menu_group = 'Grand Total'
+            THEN quantity_sold
+        END
+    ) AS reported_quantity,
+    MAX(
+        CASE
+            WHEN menu_group = 'Grand Total'
+            THEN net_sales
+        END
+    ) AS reported_net_sales
+FROM restaurant_project_mysql
+GROUP BY mesiac;
 
 
 
-
-SELECT 
+SELECT
+    mesiac,
     menu_group,
     item,
-    SUM(quantity_sold) AS celkovo_predane
-FROM predaje_restauracia
-WHERE mesiac = 'júl'
-GROUP BY menu_group, item
-ORDER BY menu_group, celkovo_predane DESC;
+    quantity_sold,
+    refunds,
+    net_sales,
+    avg_price,
+    discount
+FROM restaurant_project_mysql
+WHERE item IS NULL
+ORDER BY mesiac, id;
 
 
-SELECT * FROM predaje_restauracia;
+SELECT *
+FROM restaurant_project_mysql
+WHERE mesiac = 'jun'
+ORDER BY net_sales DESC
+LIMIT 10;
+
+
+SELECT *
+FROM restaurant_project_mysql
+WHERE mesiac = 'jul'
+ORDER BY net_sales DESC
+LIMIT 10;
+
+
+SELECT *
+FROM restaurant_project_mysql
+WHERE menu_group = 'Grand Total'
+   OR item IS NULL
+ORDER BY id;
+
+
+CREATE TABLE restaurant_sales_clean AS
+SELECT *
+FROM restaurant_project_mysql
+WHERE item IS NOT NULL;
+
+SELECT
+    mesiac,
+    COUNT(*) AS total_products,
+    SUM(quantity_sold) AS total_quantity,
+    ROUND(SUM(net_sales), 2) AS total_net_sales
+FROM restaurant_sales_clean
+GROUP BY mesiac;
+
+
+SELECT
+    COUNT(*) AS total_rows,
+    SUM(item IS NULL) AS missing_items,
+    SUM(quantity_sold IS NULL) AS missing_quantity,
+    SUM(net_sales IS NULL) AS missing_net_sales,
+    SUM(avg_price IS NULL) AS missing_avg_price,
+    SUM(discount IS NULL) AS missing_discount
+FROM restaurant_sales_clean;
+
+
+SELECT
+    id,
+    COUNT(*) AS duplicate_count
+FROM restaurant_sales_clean
+GROUP BY id
+HAVING COUNT(*) > 1;
+
+SELECT *
+FROM restaurant_sales_clean
+WHERE quantity_sold < 0
+   OR refunds < 0
+   OR net_sales < 0
+   OR avg_price < 0
+   OR discount < 0
+   OR (quantity_sold > 0 AND avg_price = 0);
+   
+   
+   SELECT
+    mesiac,
+    COUNT(*) AS total_products,
+    SUM(quantity_sold) AS total_quantity,
+    SUM(refunds) AS total_refunds,
+    ROUND(SUM(net_sales), 2) AS total_net_sales,
+    ROUND(SUM(discount), 2) AS total_discount,
+    ROUND(AVG(avg_price), 2) AS avg_product_price
+FROM restaurant_sales_clean
+GROUP BY mesiac
+ORDER BY
+    CASE
+        WHEN mesiac = 'jun' THEN 1
+        WHEN mesiac = 'jul' THEN 2
+    END;
+    
+    
+    
+    
+    SELECT
+    mesiac,
+    menu_group,
+    COUNT(*) AS product_count,
+    SUM(quantity_sold) AS total_quantity,
+    ROUND(SUM(net_sales), 2) AS total_net_sales,
+    ROUND(SUM(discount), 2) AS total_discount,
+    SUM(refunds) AS total_refunds
+FROM restaurant_sales_clean
+GROUP BY
+    mesiac,
+    menu_group
+ORDER BY
+    mesiac,
+    total_net_sales DESC;
+    
+    
+    
+    SELECT
+    mesiac,
+    menu_group,
+    COUNT(*) AS product_count,
+    SUM(quantity_sold) AS total_quantity,
+    ROUND(SUM(net_sales), 2) AS total_net_sales,
+    ROUND(SUM(discount), 2) AS total_discount,
+    SUM(refunds) AS total_refunds
+FROM restaurant_sales_clean
+GROUP BY mesiac, menu_group
+ORDER BY mesiac, total_net_sales DESC;
+
+
+
+WITH category_monthly AS (
+    SELECT
+        menu_group,
+        mesiac,
+        SUM(quantity_sold) AS total_quantity,
+        ROUND(SUM(net_sales), 2) AS total_net_sales,
+        ROUND(SUM(discount), 2) AS total_discount
+    FROM restaurant_sales_clean
+    GROUP BY menu_group, mesiac
+)
+
+SELECT
+    menu_group,
+    ROUND(SUM(CASE
+        WHEN mesiac = 'jun' THEN total_net_sales
+        ELSE 0
+    END), 2) AS june_sales,
+    ROUND(SUM(CASE
+        WHEN mesiac = 'jul' THEN total_net_sales
+        ELSE 0
+    END), 2) AS july_sales,
+    ROUND(
+        SUM(CASE WHEN mesiac = 'jul' THEN total_net_sales ELSE 0 END)
+        -
+        SUM(CASE WHEN mesiac = 'jun' THEN total_net_sales ELSE 0 END),
+    2) AS sales_difference,
+    ROUND(
+        (
+            SUM(CASE WHEN mesiac = 'jul' THEN total_net_sales ELSE 0 END)
+            -
+            SUM(CASE WHEN mesiac = 'jun' THEN total_net_sales ELSE 0 END)
+        )
+        / NULLIF(SUM(CASE WHEN mesiac = 'jun' THEN total_net_sales ELSE 0 END), 0)
+        * 100,
+    2) AS growth_percentage
+FROM category_monthly
+GROUP BY menu_group
+ORDER BY growth_percentage DESC;
+
+
+
+SELECT
+    menu_group,
+
+    SUM(CASE
+        WHEN mesiac = 'jun' THEN quantity_sold
+        ELSE 0
+    END) AS june_quantity,
+
+    SUM(CASE
+        WHEN mesiac = 'jul' THEN quantity_sold
+        ELSE 0
+    END) AS july_quantity,
+
+    SUM(CASE
+        WHEN mesiac = 'jul' THEN quantity_sold
+        ELSE 0
+    END)
+    -
+    SUM(CASE
+        WHEN mesiac = 'jun' THEN quantity_sold
+        ELSE 0
+    END) AS quantity_difference
+
+FROM restaurant_sales_clean
+GROUP BY menu_group
+ORDER BY quantity_difference DESC;
+
+
+
+SELECT
+    menu_group,
+
+    SUM(CASE WHEN mesiac = 'jun'
+        THEN quantity_sold ELSE 0 END) AS june_quantity,
+
+    SUM(CASE WHEN mesiac = 'jul'
+        THEN quantity_sold ELSE 0 END) AS july_quantity,
+
+    SUM(CASE WHEN mesiac = 'jul'
+        THEN quantity_sold ELSE 0 END)
+    -
+    SUM(CASE WHEN mesiac = 'jun'
+        THEN quantity_sold ELSE 0 END) AS quantity_difference,
+
+    ROUND(
+        (
+            SUM(CASE WHEN mesiac = 'jul'
+                THEN quantity_sold ELSE 0 END)
+            -
+            SUM(CASE WHEN mesiac = 'jun'
+                THEN quantity_sold ELSE 0 END)
+        )
+        / NULLIF(
+            SUM(CASE WHEN mesiac = 'jun'
+                THEN quantity_sold ELSE 0 END), 0
+        ) * 100,
+    2) AS quantity_growth_percentage
+
+FROM restaurant_sales_clean
+GROUP BY menu_group
+ORDER BY quantity_growth_percentage DESC;
+
+
+SELECT * FROM restaurant_project_mysql;
+
+
+SELECT MAX(net_sales) FROM restaurant_sales;
+SELECT MAX(net_sales) FROM restaurant_sales_clean;
+
+SELECT id, item, quantity_sold, avg_price, net_sales, mesiac
+FROM restaurant_sales
+WHERE item LIKE 'RAVU%';
+
+SELECT COUNT(*) FROM restaurant_project_mysql;
+
+
+SELECT COUNT(*), MAX(net_sales) FROM restaurant_sales;
+SELECT COUNT(*), MAX(net_sales) FROM restaurant_sales_clean;
+
+ALTER TABLE restaurant_sales_clean
+ADD COLUMN net_sales_fixed DECIMAL(10,2);
+
+
+UPDATE restaurant_sales_clean
+SET net_sales_fixed = CASE
+    WHEN quantity_sold * avg_price >= 1000
+        THEN ROUND(quantity_sold * avg_price, 2)
+    ELSE net_sales
+END
+WHERE id > 0;
+
+
+SELECT MAX(net_sales_fixed) FROM restaurant_sales_clean;   -- cca 9 250
+
+
+SELECT mesiac, ROUND(SUM(net_sales_fixed)) AS tržby, SUM(quantity_sold) AS kusy
+FROM restaurant_sales_clean
+GROUP BY mesiac;
+
+SELECT id, menu_group, item, mesiac FROM restaurant_sales_clean WHERE id IN (1,2,3);
+
+SELECT * FROM restaurant_sales_clean WHERE item IS NULL;
+
+
+-- Top 10 položiek podľa tržieb
+SELECT item, ROUND(SUM(net_sales_fixed)) AS trzby, SUM(quantity_sold) AS kusy
+FROM restaurant_sales_clean
+GROUP BY item
+ORDER BY trzby DESC
+LIMIT 10;
+
+
+-- Podiel kategórií na tržbách
+SELECT menu_group,
+       ROUND(SUM(net_sales_fixed)) AS trzby,
+       ROUND(100 * SUM(net_sales_fixed) / SUM(SUM(net_sales_fixed)) OVER (), 1) AS podiel_pct
+FROM restaurant_sales_clean
+GROUP BY menu_group
+ORDER BY trzby DESC;
+
+DELETE FROM restaurant_sales_clean WHERE id IN (1,2,3);
+
+-- kontrola: jún 18971 kusov, tržby ≈ 249 857
+SELECT mesiac, SUM(quantity_sold) AS kusy, ROUND(SUM(net_sales_fixed)) AS trzby
+FROM restaurant_sales_clean GROUP BY mesiac;
+
+
+SELECT item_clean, ROUND(SUM(net_sales_fixed)) AS trzby, SUM(quantity_sold) AS kusy
+FROM restaurant_sales_clean
+GROUP BY item_clean
+ORDER BY trzby DESC
+LIMIT 10;
+
+-- zmena tržieb po kategóriách
+SELECT menu_group,
+  ROUND(SUM(CASE WHEN mesiac='jun' THEN net_sales_fixed END)) AS jun,
+  ROUND(SUM(CASE WHEN mesiac='jul' THEN net_sales_fixed END)) AS jul,
+  ROUND(100 * (SUM(CASE WHEN mesiac='jul' THEN net_sales_fixed END)
+        / NULLIF(SUM(CASE WHEN mesiac='jun' THEN net_sales_fixed END), 0) - 1), 1) AS zmena_pct
+FROM restaurant_sales_clean
+GROUP BY menu_group
+ORDER BY zmena_pct DESC;
+
+
+-- položky, ktoré boli len v jednom mesiaci
+SELECT item_clean, MIN(mesiac) AS mesiac, ROUND(SUM(net_sales_fixed)) AS trzby
+FROM restaurant_sales_clean
+GROUP BY item_clean
+HAVING COUNT(DISTINCT mesiac) = 1
+ORDER BY trzby DESC;
+
+
+-- 1. pridaj nové stĺpce
+ALTER TABLE restaurant_sales_clean
+  ADD COLUMN item_clean VARCHAR(150),
+  ADD COLUMN is_checkmate TINYINT(1) DEFAULT 0;
+  
+  UPDATE restaurant_sales_clean
+SET is_checkmate = IF(item LIKE 'z:checkmate-%', 1, 0),
+    item_clean   = TRIM(REPLACE(REPLACE(item, 'z:checkmate-', ''), ' ,', ','))
+WHERE id > 0;
+
+
+-- 3. oprav názvy skupín
+UPDATE restaurant_sales_clean
+SET menu_group = 'Senso Creations - Hot Food'
+WHERE menu_group = 'Senso Creations - Hot Foo';
+
+UPDATE restaurant_sales_clean
+SET menu_group = 'Senso Creations - Sushi'
+WHERE menu_group = 'Sushi - Senso Creations';
+
+SELECT item, item_clean, is_checkmate
+FROM restaurant_sales_clean
+WHERE item LIKE 'z:checkmate-%' LIMIT 5;
+
+
+SELECT DISTINCT item_clean FROM restaurant_sales_clean
+WHERE is_checkmate = 1
+  AND item_clean NOT IN (SELECT item FROM restaurant_sales_clean WHERE is_checkmate = 0);
+
+
+
+SELECT item_clean, ROUND(SUM(net_sales_fixed)) AS trzby, SUM(quantity_sold) AS kusy
+FROM restaurant_sales_clean
+GROUP BY item_clean
+ORDER BY trzby DESC
+LIMIT 10;
+
+
+SELECT item_clean, MIN(mesiac) AS mesiac, ROUND(SUM(net_sales_fixed)) AS trzby
+FROM restaurant_sales_clean
+GROUP BY item_clean
+HAVING COUNT(DISTINCT mesiac) = 1
+ORDER BY trzby DESC;
+
+
+SELECT DISTINCT item_clean
+FROM restaurant_sales_clean
+WHERE is_checkmate = 1
+  AND item_clean NOT IN (SELECT item FROM restaurant_sales_clean WHERE is_checkmate = 0);
+  
+  
+  SELECT is_checkmate, COUNT(*) AS riadky, ROUND(SUM(net_sales_fixed)) AS trzby
+FROM restaurant_sales_clean
+GROUP BY is_checkmate;
+
+
+SELECT menu_group, COUNT(*) FROM restaurant_sales_clean
+WHERE menu_group LIKE 'Senso%' OR menu_group LIKE 'Sushi%'
+GROUP BY menu_group;
+
+
+ALTER TABLE restaurant_sales_clean ADD COLUMN item_key VARCHAR(150);
+
+UPDATE restaurant_sales_clean
+SET item_key = LOWER(TRIM(REGEXP_REPLACE(
+                 REGEXP_REPLACE(item_clean, '\\([VGF, ]+\\)', ''),
+               '[*.]', '')))
+WHERE id > 0;
+
+
+SELECT item_clean, MIN(mesiac) AS mesiac, ROUND(SUM(net_sales_fixed)) AS trzby
+FROM restaurant_sales_clean
+WHERE menu_group NOT LIKE '%Wine'
+GROUP BY item_clean
+HAVING COUNT(DISTINCT mesiac) = 1
+ORDER BY trzby DESC;
+
+
+SELECT item_key,
+  ROUND(SUM(CASE WHEN mesiac='jun' THEN net_sales_fixed END)) AS jun,
+  ROUND(SUM(CASE WHEN mesiac='jul' THEN net_sales_fixed END)) AS jul,
+  ROUND(SUM(CASE WHEN mesiac='jul' THEN net_sales_fixed END)
+      - SUM(CASE WHEN mesiac='jun' THEN net_sales_fixed END)) AS rozdiel
+FROM restaurant_sales_clean
+GROUP BY item_key
+HAVING COUNT(DISTINCT mesiac) = 2
+ORDER BY rozdiel ASC
+LIMIT 15;
+
+
+
+SELECT is_checkmate,
+       COUNT(*) AS riadky,
+       SUM(quantity_sold) AS kusy,
+       ROUND(SUM(net_sales_fixed)) AS trzby
+FROM restaurant_sales_clean
+GROUP BY is_checkmate;
+
+
+-- to isté po mesiacoch
+SELECT mesiac, is_checkmate,
+       COUNT(*) AS riadky,
+       ROUND(SUM(net_sales_fixed)) AS trzby
+FROM restaurant_sales_clean
+GROUP BY mesiac, is_checkmate
+ORDER BY mesiac, is_checkmate;
+
+
+-- Mt. Fuji je zapísaný pod dvoma kľúčmi
+UPDATE restaurant_sales_clean
+SET item_key = 'mt fuji'
+WHERE item_key = 'mt fuji roll' AND id > 0;
+
+
+SELECT item_key, COUNT(*) FROM restaurant_sales_clean
+WHERE item_key LIKE 'mt fuji%' GROUP BY item_key;
+
+
+
+SELECT item_key,
+  ROUND(SUM(CASE WHEN mesiac='jun' THEN net_sales_fixed END)) AS jun,
+  ROUND(SUM(CASE WHEN mesiac='jul' THEN net_sales_fixed END)) AS jul,
+  ROUND(SUM(CASE WHEN mesiac='jul' THEN net_sales_fixed END)
+      - SUM(CASE WHEN mesiac='jun' THEN net_sales_fixed END)) AS rozdiel
+FROM restaurant_sales_clean
+WHERE menu_group NOT LIKE '%Wine'
+GROUP BY item_key
+HAVING COUNT(DISTINCT mesiac) = 2
+ORDER BY rozdiel DESC
+LIMIT 15;
+
+
+
+UPDATE restaurant_sales_clean
+SET item_key = LOWER(TRIM(REGEXP_REPLACE(
+                 REGEXP_REPLACE(item_clean, '\\([VGF, ]+\\)', ''),
+               '[*.]', '')))
+WHERE id > 0;
+
+
+
+UPDATE restaurant_sales_clean
+SET item_key = 'mt fuji'
+WHERE item_key = 'mt fuji roll' AND id > 0;
+
+
+
+SELECT COUNT(DISTINCT item_key) FROM restaurant_sales_clean;
+SELECT item_key, COUNT(*) FROM restaurant_sales_clean
+WHERE item_key LIKE 'mt fuji%' GROUP BY item_key;
+
+
+
+SELECT item_key,
+  ROUND(SUM(CASE WHEN mesiac='jun' THEN net_sales_fixed END)) AS jun,
+  ROUND(SUM(CASE WHEN mesiac='jul' THEN net_sales_fixed END)) AS jul,
+  ROUND(SUM(CASE WHEN mesiac='jul' THEN net_sales_fixed END)
+      - SUM(CASE WHEN mesiac='jun' THEN net_sales_fixed END)) AS rozdiel
+FROM restaurant_sales_clean
+WHERE menu_group NOT LIKE '%Wine'
+GROUP BY item_key
+HAVING COUNT(DISTINCT mesiac) = 2
+ORDER BY rozdiel ASC
+LIMIT 15;
+
+
+SELECT mesiac,
+       SUM(quantity_sold) AS kusy,
+       ROUND(SUM(net_sales_fixed)) AS trzby,
+       ROUND(SUM(net_sales_fixed) / SUM(quantity_sold), 2) AS priemerna_cena,
+       ROUND(SUM(discount)) AS zlavy
+FROM restaurant_sales_clean
+WHERE item_key = 'spicy wifey'
+GROUP BY mesiac;
+
+
+
+CREATE OR REPLACE VIEW v_sales_clean AS
+SELECT id,
+       mesiac AS month_label,
+       CASE mesiac WHEN 'jun' THEN 6 WHEN 'jul' THEN 7 END AS month_num,
+       menu_group,
+       item_clean AS item,
+       item_key,
+       is_checkmate,
+       quantity_sold,
+       refunds,
+       avg_price,
+       discount,
+       net_sales_fixed AS net_sales
+FROM restaurant_sales_clean;
+
+SELECT * FROM v_sales_clean;
+
