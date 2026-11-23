@@ -6,10 +6,10 @@
 
 ## Key Findings
 
-- **Revenue grew 9.4% month over month**, from €249.9K in June to €273.4K in July. Units sold grew 9.8% (18,971 to 20,838).
+- **Revenue grew 9.4% month over month**, from $249.9K in June to $273.4K in July. Units sold grew 9.8% (18,971 to 20,838).
 - **Signature Rolls are the largest category** (about 22% of total revenue), followed by Signature Cocktails (about 14%).
-- **Growth came mostly from items sold in both months.** The biggest gains were RAVU Roll (+€1,973), Teriyaki Chicken (+€1,682) and Crispy Rice Flight (+€1,161). Items sold in only one month were small (under €1,000 each).
-- **Spicy Wifey declined by €1,050 (-12%)**, mainly because fewer units were sold (414 to 367), not because of price (average €20.72 vs. €20.52).
+- **Growth came mostly from items sold in both months.** The biggest gains were RAVU Roll (+$1,973), Teriyaki Chicken (+$1,682) and Crispy Rice Flight (+$1,161). Items sold in only one month were small (under €1,000 each).
+- **Spicy Wifey declined by $1,050 (-12%)**, mainly because fewer units were sold (414 to 367), not because of price (average $20.72 vs. $20.52).
 - **Items with the z:checkmate- prefix make up about 7% of revenue** and declined 8% from June to July. The meaning of the prefix is not documented in the source data.
 
 ## Data Quality Issues Found
