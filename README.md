@@ -2,6 +2,26 @@
 
 ## Project Overview
 
+![Restaurant sales dashboard](dashboard.jpeg)
+
+## Key Findings
+
+- **Revenue grew 9.4% month over month**, from €249.9K in June to €273.4K in July. Units sold grew 9.8% (18,971 to 20,838).
+- **Signature Rolls are the largest category** (about 22% of total revenue), followed by Signature Cocktails (about 14%).
+- **Growth came mostly from items sold in both months.** The biggest gains were RAVU Roll (+€1,973), Teriyaki Chicken (+€1,682) and Crispy Rice Flight (+€1,161). Items sold in only one month were small (under €1,000 each).
+- **Spicy Wifey declined by €1,050 (-12%)**, mainly because fewer units were sold (414 to 367), not because of price (average €20.72 vs. €20.52).
+- **Items with the z:checkmate- prefix make up about 7% of revenue** and declined 8% from June to July. The meaning of the prefix is not documented in the source data.
+
+## Data Quality Issues Found
+
+| Issue | What I found | How I handled it |
+|---|---|---|
+| Truncated revenue | 132 item rows with quantity x price above €1,000 had net_sales cut off (e.g. RAVU Roll in July showed 9 instead of about 9,259), apparently at the thousands separator | Recalculated as quantity_sold x avg_price in net_sales_fixed (approximate, because avg_price is rounded) |
+| Summary rows mixed with data | 16 subtotal and Grand Total rows | Removed. Item quantities then matched the Grand Total exactly (18,971 in June, 20,838 in July) |
+| Duplicate rows | 3 beer rows in June repeated "Bottle Beer" (168 units) | Removed |
+| Inconsistent names | z:checkmate- prefix, dietary tags such as (GF), inconsistent group labels | Created item_clean, item_key and is_checkmate, fixed menu_group labels |
+| Wine entries | Wine appears to be recorded differently across months (parent rows with zero sales) | Excluded from item-level comparisons |
+
 This project explores restaurant sales data for **June and July** using **MySQL** and **Power BI**. The goal is to prepare the source data for analysis, check data quality, standardise product information, and identify sales patterns across menu categories and individual products.
 
 The SQL workflow covers data exploration, data cleaning, validation, product-name standardisation, month-over-month comparisons, and the creation of a reporting view for Power BI.
